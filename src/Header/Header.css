@@ -1,0 +1,13 @@
+header {
+    width: 100%;
+    background: #9395D3;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+}
+h1 {
+    color: white;
+    font-size: 36px;
+}

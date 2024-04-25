@@ -1,0 +1,60 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+.noteForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  border: 2px solid #9395d3;
+  border-radius: 15px;
+  background: #b3b7ee;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input {
+  border: none;
+  border-bottom: 3px solid #6568ad;
+  height: 28px;
+  color: black;
+  font-size: 24px;
+  background-color: transparent;
+  box-shadow: 10px 11px 84px -25px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 10px 11px 84px -25px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 10px 11px 84px -25px rgba(0, 0, 0, 0.25) inset;
+}
+
+input::placeholder {
+  color: #6568ad;
+}
+
+textarea {
+  border: none;
+  border-bottom: 3px solid #6568ad;
+  resize: none;
+  width: 250px;
+  height: 100px;
+  background: transparent;
+  box-shadow: 10px 11px 84px -25px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 10px 11px 84px -25px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 10px 11px 84px -25px rgba(0, 0, 0, 0.25) inset;
+}
+
+textarea::placeholder {
+    color: #6568ad;
+}
+
+button {
+    height: 30px;
+    border: none;
+    width: 90px;
+    border-radius: 15px;
+    background: #6568ad;
+    color: white;
+    font-size: 16px;
+    box-shadow: rgba(26, 29, 24, 0.392) 0px 5px 15px;
+}
