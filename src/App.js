@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './Header/Header';
-import AddNoteForm from './AddNoteForm/AddNoteForm';
-import NoteList from './NoteList/NoteList';
-import NotesData from './NotesData';
-import NotesReducer from './NotesReducer';
+import Header from './components/Header/Header';
+import AddNoteForm from './components/AddNoteForm/AddNoteForm';
+import NoteList from './components/NoteList/NoteList';
+import NotesData from './state/NotesData';
+import NotesReducer from './state/NotesReducer';
 import { useReducer } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -26,7 +26,6 @@ function App() {
   const editNote = (id, { title, text }) => {
     dispatch({
       type: "changed",
-      id: id,
       note: {
         id: id,
         title: title,

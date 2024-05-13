@@ -7,6 +7,10 @@ function EditNoteForm({ note, onSaveNote }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (title.trim() === '' || text.trim() === '') {
+            alert('Please enter both title and text.');
+            return;
+        }
         onSaveNote({
             ...note,
             title,
